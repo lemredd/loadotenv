@@ -4,7 +4,7 @@ import os
 def load_env(file_loc=".env"):
     with open(file_loc) as f:
         env_vars = [
-            var.split("=") for var in f.readlines()
+            var.strip("\n").split("=") for var in f.readlines()
             if "=" in var and "#" not in var
         ]
 
