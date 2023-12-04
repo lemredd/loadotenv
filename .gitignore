@@ -1,0 +1,8 @@
+# hidden files and folders
+*hidden*
+
+# Python
+__pycache__
+
+# Environment variables
+.env
