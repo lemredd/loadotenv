@@ -1,6 +1,8 @@
 import os
 import unittest
 
+from main import load_env
+
 
 class TestCoreFunctionality(unittest.TestCase):
     def setUp(self):
@@ -15,7 +17,8 @@ foo=bar
             test_file.write(lines)
 
     def test_loading_of_environment_vars(self):
-        self.assertEqual(1, 1)
+        load_env(self.FILE_LOC)
+        self.assertEqual(os.environ["foo"], "bar")
 
     def tearDown(self):
         os.remove(self.FILE_LOC)
