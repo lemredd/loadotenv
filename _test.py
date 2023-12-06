@@ -24,20 +24,21 @@ foo=bar
         os.remove(self.FILE_LOC)
 
 
-class EdgeCasesTestCase():
+class EdgeCasesTestCase(unittest.TestCase):
     def setUp(self):
         self.FILE_LOC = "./.env_fixture"
 
-        lines = """
+        self.lines = """
 # This is a comment
-foo=bar
+invalid===var1
         """
 
         with open(self.FILE_LOC, mode="w") as test_file:
-            test_file.write(lines)
+            test_file.write(self.lines)
 
     def test_erroneous_lines(self):
-        self.assertEqual(1, 1)
+        with self.assertRaises(AttributeError):
+            load_env(self.FILE_LOC)
 
     def tearDown(self):
         os.remove(self.FILE_LOC)
