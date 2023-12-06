@@ -4,7 +4,7 @@ import unittest
 from main import load_env
 
 
-class TestCoreFunctionality(unittest.TestCase):
+class CoreFunctionalityTestCase(unittest.TestCase):
     def setUp(self):
         self.FILE_LOC = "./.env_fixture"
 
