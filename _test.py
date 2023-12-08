@@ -36,9 +36,9 @@ invalid===var1
         with open(self.FILE_LOC, mode="w") as test_file:
             test_file.write(self.lines)
 
-    def test_erroneous_lines(self):
-        with self.assertRaises(AttributeError):
-            load_env(self.FILE_LOC)
+    def test_absence_of_invalid_variables(self):
+        load_env(self.FILE_LOC)
+        self.assertIsNone(os.environ.get("invalid"))
 
     def tearDown(self):
         os.remove(self.FILE_LOC)
