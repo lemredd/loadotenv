@@ -1,7 +1,7 @@
 import os
 import unittest
 
-from main import load_env
+from src.loadotenv import load_env
 
 
 class CoreFunctionalityTestCase(unittest.TestCase):

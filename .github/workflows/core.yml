@@ -20,5 +20,5 @@ jobs:
       - name: Display Python version
         run: python -c "import sys; print(sys.version)"
       - name: Run unit test
-        run: python -m unittest _test.py
+        run: python -m unittest tests/test.py
 
