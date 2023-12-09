@@ -1,12 +1,7 @@
 # `loadotenv`
 
+# `loadotenv`
 Reinventing the wheel to load .env variables
-
-<!--
-TODO:
-- [ ] add `## Installation`
-- [ ] Complete `## Usage`
--->
 
 ## Installation
 ```python
@@ -14,11 +9,14 @@ pip install loadotenv
 ```
 
 ## Usage
-
-Still under construction!
-<!--
 From a `.py` file near your `.env` file:
+
+```py
+from loadotenv import load_env
+
+load_env()
+# load_env(file_loc="/loc/to/.env")
 ```
-from loadotenv
-```
--->
+
+## Contributing
+Issues and PRs are welcome!
