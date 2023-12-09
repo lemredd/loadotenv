@@ -10,7 +10,7 @@ authors = [
 ]
 description = "Reinventing the wheel to load .env variables"
 readme = "README.md"
-requires-python = ">=3.6"
+requires-python = ">=3.9"
 keywords = [".env","environment", "utility"]
 classifiers = [
     "Programming Language :: Python :: 3",
