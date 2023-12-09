@@ -1,4 +1,4 @@
-# `loadotenv`
+[![ci](https://github.com/lemredd/loadotenv/actions/workflows/core.yml/badge.svg?branch=main)](https://github.com/lemredd/loadotenv/actions/workflows/core.yml)
 
 # `loadotenv`
 Reinventing the wheel to load .env variables
