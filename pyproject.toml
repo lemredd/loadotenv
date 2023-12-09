@@ -3,7 +3,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "loadotenv_lemredd"
+name = "loadotenv"
 version = "0.2.0"
 authors = [
   { name="Jarlem Red J. de Peralta", email="lmoa.jhdp@gmail.com" },
