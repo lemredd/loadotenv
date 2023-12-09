@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "loadotenv_lemredd"
-version = "1.0.0"
+version = "0.2.0"
 authors = [
   { name="Jarlem Red J. de Peralta", email="lmoa.jhdp@gmail.com" },
 ]
