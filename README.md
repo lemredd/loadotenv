@@ -3,6 +3,9 @@
 # `loadotenv`
 Reinventing the wheel to load .env variables
 
+## Requirement/s
+- Python version: `>= 3.9`
+
 ## Installation
 ```python
 pip install loadotenv
