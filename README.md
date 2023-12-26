@@ -23,5 +23,12 @@ load_env()
 
 For a flexible usage, use `pathlib.Path` when locating your `.env` file.
 
+```py
+from pathlib import Path
+from loadotenv import load_env
+
+load_env(file_loc=Path(Path(__file__).resolve().parent, ".env"))
+```
+
 ## Contributing
 Issues and PRs are welcome!
