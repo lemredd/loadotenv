@@ -21,5 +21,7 @@ load_env()
 # load_env(file_loc="/loc/to/.env")
 ```
 
+For a flexible usage, use `pathlib.Path` when locating your `.env` file.
+
 ## Contributing
 Issues and PRs are welcome!
