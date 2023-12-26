@@ -3,7 +3,7 @@ name: Loadotenv Core Tests
 on: [push]
 
 jobs:
-  build:
+  build-ubuntu:
 
     runs-on: ubuntu-latest
     strategy:
@@ -22,7 +22,7 @@ jobs:
       - name: Run unit test
         run: python -m unittest tests/test.py
 
-  build:
+  build-windows:
     runs-on: windows-latest
     strategy:
       matrix:
